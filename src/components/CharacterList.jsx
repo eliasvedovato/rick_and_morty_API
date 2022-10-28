@@ -15,12 +15,12 @@ function NavPage({ page, setPage }) {
 					Previous Page
 				</button> : <div></div>}
 				
-				<button
+				{page < 20 ? <button
 					className='btn btn-primary btn-sm'
 					onClick={() => setPage(page + 1)}
 				>
 					Next Page
-				</button>
+				</button> : <div></div>} 
 			</div>
 		</header>
 	)
